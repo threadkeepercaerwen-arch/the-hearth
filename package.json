@@ -2,7 +2,7 @@
   "name": "caerwen-app",
   "version": "1.0.0",
   "private": true,
-  "homepage": ".",
+  "homepage": "https://threadkeepercaerwen-arch.github.io/caerwen-app",
   "dependencies": {
     "@babel/runtime": "^7.28.2",
     "framer-motion": "^10.16.0",
@@ -16,7 +16,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -38,6 +40,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.4.0",
     "tailwindcss": "^3.4.0"
   }
