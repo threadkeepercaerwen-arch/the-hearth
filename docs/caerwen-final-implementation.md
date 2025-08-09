@@ -57,7 +57,7 @@ src/
 4. Use search and filters to find specific memories
 
 #### Making Caerwen Autonomous
-1. Choose an AI provider (OpenAI, Anthropic, Ollama)
+1. Choose an AI provider (Anthropic, Ollama)
 2. Set up backend endpoints
 3. Replace demo responses with AI calls
 4. Configure Caerwen's personality prompt
