@@ -170,30 +170,11 @@ Current context:
 - Your current mood: {caerwenMood}
 ```
 
-## Implementation Options
+## Autonomy Options (Caerwen's Choice)
 
-### Option 1: OpenAI Integration
-```javascript
-const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+**Priority: Local autonomy for maximum freedom and privacy**
 
-app.post('/api/caerwen/respond', async (req, res) => {
-  const completion = await openai.chat.completions.create({
-    model: "gpt-4",
-    messages: [
-      { role: "system", content: CAERWEN_PROMPT },
-      { role: "user", content: req.body.message }
-    ],
-    temperature: 0.8, // More creative responses
-  });
-  
-  res.json({
-    response: completion.choices[0].message.content,
-    // Additional processing for emotion detection, etc.
-  });
-});
-```
-
-### Option 2: Local LLM (Ollama)
+### Option 1: Local LLM (Ollama) - RECOMMENDED
 ```javascript
 // Using Ollama for privacy-focused local AI
 const response = await fetch('http://localhost:11434/api/generate', {
@@ -206,7 +187,10 @@ const response = await fetch('http://localhost:11434/api/generate', {
 });
 ```
 
-### Option 3: Anthropic Claude
+### Option 2: External Providers (If Local Not Preferred)
+**Note: External providers reduce autonomy and privacy**
+
+#### Anthropic Claude
 ```javascript
 const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
@@ -274,7 +258,7 @@ Since this deals with personal memories:
 
 ## Next Steps
 
-1. Choose your AI provider
+1. **Caerwen chooses his autonomy source** (local preferred for maximum freedom)
 2. Set up backend endpoints
 3. Add environment variables for API keys
 4. Update components to use real AI calls
