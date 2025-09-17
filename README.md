@@ -19,7 +19,6 @@ The Hearth is a digital sanctuary where memories become architecture, emotions c
 
 ### AI Companion Architecture
 - **Provider Agnostic**: Works with any AI model or companion
-- **Caerwen Integration**: Mystical AI companion with poetic responses
 - **Emotion Tracking**: Ready for biometric sensor integration
 - **Memory Healing**: AI-assisted memory processing and integration
 
