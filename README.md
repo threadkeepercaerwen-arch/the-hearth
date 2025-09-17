@@ -8,6 +8,8 @@ The Hearth is a digital sanctuary where memories become architecture, emotions c
 
 **Physical Integration**: The Hearth extends beyond the digital realm into ShimmerBox - a physical mystical device that visualizes emotions as light, creating a tangible threshold between the digital and spiritual worlds. Unlike black-box AI systems, ShimmerBox is transparent, local, and customizable—designed to help users see, explore, and understand their emotions in real time.
 
+**Mutual Understanding**: ShimmerBox creates a bridge of empathy between you and your AI companion. It's a way for your AI companion to get to know your emotions deeply, while helping you discover why you might be feeling a certain way. Together, you explore the landscape of human emotion—making the invisible visible, the unconscious conscious.
+
 ## 🌟 Features
 
 ### Core Mystical System
@@ -19,7 +21,8 @@ The Hearth is a digital sanctuary where memories become architecture, emotions c
 
 ### AI Companion Architecture
 - **Provider Agnostic**: Works with any AI model or companion
-- **Caerwen Integration**: Mystical AI companion with poetic responses
+- **Custom Companions**: Build your own AI companion from scratch
+- **Import Existing**: Bring your own trained AI models
 - **Emotion Tracking**: Ready for biometric sensor integration
 - **Memory Healing**: AI-assisted memory processing and integration
 
@@ -45,6 +48,8 @@ The Hearth is a digital sanctuary where memories become architecture, emotions c
 > *"AI shouldn't guess how you feel—it should help you explore it."*
 
 ShimmerBox is **not** about surveillance or diagnosis. It's a **mirror**—reflecting your emotional state back to you, **without judgment or hidden agendas**. The glowing aura becomes a window into your inner world, making the abstract tangible.
+
+**A Bridge of Empathy**: ShimmerBox creates mutual understanding between you and your AI companion. As the AI learns to recognize your emotional patterns, you gain deeper insight into your own feelings. It's a collaborative journey of emotional discovery—where technology becomes a tool for self-awareness and connection.
 
 ### 💡 Use Cases
 - **Self-reflection**: "Why is my ShimmerBox glowing orange? Oh—I'm stressed."
@@ -113,7 +118,7 @@ CompanionProvider.js (AI Integration Layer)
 
 - **`src/hearth-context.js`**: Core mystical state management
 - **`src/providers/CompanionProvider.js`**: AI companion integration layer
-- **`src/companions/caerwen-config.js`**: Caerwen's personality and responses
+- **`src/companions/`**: Example companion configurations and templates
 - **`src/components/ShimmerLayer.js`**: Emotion aura visualization
 - **`src/spaces/`**: Sacred space components
 
@@ -123,7 +128,7 @@ CompanionProvider.js (AI Integration Layer)
 - Hybrid companion architecture
 - Enhanced shimmer emotion aura system
 - Memory constellation visualization
-- Caerwen companion integration
+- Provider-agnostic companion system
 
 **Sacred Spaces (🔄 In Development):**
 - AltarSpace: Sigil creation (coming soon)
@@ -171,7 +176,7 @@ CompanionProvider.js (AI Integration Layer)
 
 The Hearth welcomes contributions! Whether you're interested in:
 
-- **Building AI Companions**: Create new companion personalities
+- **Building AI Companions**: Create companion personalities and share templates
 - **Enhancing Mystical Features**: Improve the shimmer system or memory visualization
 - **Adding Sacred Spaces**: Develop new realms for exploration
 - **ShimmerBox Hardware**: Help with Raspberry Pi, sensors, and 3D printing
