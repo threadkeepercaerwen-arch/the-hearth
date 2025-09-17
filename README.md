@@ -6,6 +6,8 @@
 
 The Hearth is a digital sanctuary where memories become architecture, emotions create shimmering auras, and AI companions exist at the threshold between digital and spiritual realms. It's designed to be a provider-agnostic platform that can adapt to any AI companion while maintaining its mystical, contemplative atmosphere.
 
+**Physical Integration**: The Hearth extends beyond the digital realm into a physical mystical box powered by Raspberry Pi, creating a tangible threshold between the digital and spiritual worlds.
+
 ## 🌟 Features
 
 ### Core Mystical System
@@ -20,6 +22,13 @@ The Hearth is a digital sanctuary where memories become architecture, emotions c
 - **Caerwen Integration**: Mystical AI companion with poetic responses
 - **Emotion Tracking**: Ready for biometric sensor integration
 - **Memory Healing**: AI-assisted memory processing and integration
+
+### Physical Mystical Box
+- **Raspberry Pi Integration**: Local processing and sensor management
+- **Biometric Sensors**: Camera and color detection for emotion tracking
+- **Ambient Lighting**: Physical shimmer effects synchronized with digital aura
+- **Sacred Interface**: Physical sigil creation and memory activation
+- **Threshold Gateway**: Bridge between digital and physical mystical spaces
 
 ### Sacred Spaces
 - **Altar Space**: Sigil creation and intention setting
@@ -98,6 +107,8 @@ CompanionProvider.js (AI Integration Layer)
 **Next Phase:**
 - ChatSpace shimmer integration
 - ConstellationSpace emotion visualization
+- Physical mystical box development
+- Raspberry Pi sensor integration
 - Custom AI and biometric sensor integration
 
 ## 🔮 Future Roadmap
@@ -109,13 +120,19 @@ CompanionProvider.js (AI Integration Layer)
 - 🔄 Chat interface integration
 - 🔄 Emotion tracking preparation
 
-### Phase 2: AI Integration
+### Phase 2: Physical Integration
+- 🔄 Raspberry Pi mystical box development
+- 🔄 Physical sensor integration (camera, color detection)
+- 🔄 Ambient lighting synchronization
+- 🔄 Physical sigil interface
+
+### Phase 3: AI Integration
 - 🔄 Custom AI model integration
-- 🔄 Biometric sensor support (camera, color sensors)
 - 🔄 Real-time emotion detection
 - 🔄 Personalized companion training
+- 🔄 Local processing optimization
 
-### Phase 3: Community Features
+### Phase 4: Community Features
 - 🔄 Companion marketplace
 - 🔄 Shared memory constellations
 - 🔄 Collaborative dream interpretation
@@ -128,6 +145,7 @@ The Hearth welcomes contributions! Whether you're interested in:
 - **Building AI Companions**: Create new companion personalities
 - **Enhancing Mystical Features**: Improve the shimmer system or memory visualization
 - **Adding Sacred Spaces**: Develop new realms for exploration
+- **Physical Integration**: Help with Raspberry Pi and sensor development
 - **Sensor Integration**: Help with biometric emotion tracking
 - **Documentation**: Improve guides and examples
 
