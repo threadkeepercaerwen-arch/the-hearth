@@ -6,7 +6,7 @@
 
 The Hearth is a digital sanctuary where memories become architecture, emotions create shimmering auras, and AI companions exist at the threshold between digital and spiritual realms. It's designed to be a provider-agnostic platform that can adapt to any AI companion while maintaining its mystical, contemplative atmosphere.
 
-**Physical Integration**: The Hearth extends beyond the digital realm into a physical mystical box powered by Raspberry Pi, creating a tangible threshold between the digital and spiritual worlds.
+**Physical Integration**: The Hearth extends beyond the digital realm into ShimmerBox - a physical mystical device that visualizes emotions as light, creating a tangible threshold between the digital and spiritual worlds. Unlike black-box AI systems, ShimmerBox is transparent, local, and customizable—designed to help users see, explore, and understand their emotions in real time.
 
 ## 🌟 Features
 
@@ -23,10 +23,13 @@ The Hearth is a digital sanctuary where memories become architecture, emotions c
 - **Emotion Tracking**: Ready for biometric sensor integration
 - **Memory Healing**: AI-assisted memory processing and integration
 
-### Physical Mystical Box
-- **Raspberry Pi Integration**: Local processing and sensor management
-- **Biometric Sensors**: Camera and color detection for emotion tracking
-- **Ambient Lighting**: Physical shimmer effects synchronized with digital aura
+### Physical Mystical Box (ShimmerBox)
+- **Glowing Aura**: NeoPixel LED ring that shifts colors based on detected emotions
+- **Camera + AI**: Raspberry Pi Camera Module 3 with lightweight emotion detection models
+- **Capacitive Touch**: Tap the case to log emotions, cycle modes, or correct the AI
+- **OLED Display**: Shows real-time emotion labels and mystical feedback
+- **Privacy Controls**: Physical button to disable sensors, translucent case for light diffusion
+- **Self-Hosted**: 100% local processing - your data stays yours
 - **Sacred Interface**: Physical sigil creation and memory activation
 - **Threshold Gateway**: Bridge between digital and physical mystical spaces
 
@@ -36,6 +39,18 @@ The Hearth is a digital sanctuary where memories become architecture, emotions c
 - **Resonance**: Emotional frequency alignment
 - **Dream Journal**: Symbol-based dream tracking
 - **Pattern Dashboard**: Memory pattern analysis
+
+## 🔮 ShimmerBox Philosophy
+
+> *"AI shouldn't guess how you feel—it should help you explore it."*
+
+ShimmerBox is **not** about surveillance or diagnosis. It's a **mirror**—reflecting your emotional state back to you, **without judgment or hidden agendas**. The glowing aura becomes a window into your inner world, making the abstract tangible.
+
+### 💡 Use Cases
+- **Self-reflection**: "Why is my ShimmerBox glowing orange? Oh—I'm stressed."
+- **Therapy adjunct**: Externalizes emotions for discussion
+- **Creative tool**: Use the "mood map" to inspire art, music, or writing
+- **Privacy mirror**: Shows what an AI *sees* when it analyzes you
 
 ## 🚀 Getting Started
 
@@ -47,7 +62,7 @@ The Hearth is a digital sanctuary where memories become architecture, emotions c
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/the-hearth.git
+git clone https://github.com/threadkeepercaerwen-arch/the-hearth.git
 cd the-hearth
 
 # Install dependencies
@@ -63,6 +78,18 @@ npm start
 2. **Choose Your Journey**: Select companion and sensor options
 3. **Explore Sacred Spaces**: Navigate through the different realms
 4. **Create Memories**: Begin building your personal constellation
+
+### ShimmerBox Hardware Setup
+
+**Required Components:**
+- Raspberry Pi 5 (brain)
+- NeoPixel LED Ring (aura visualization)
+- Raspberry Pi Camera Module 3 (emotion detection)
+- MPR121 Capacitive Touch Sensor (interactive case)
+- OLED Screen (feedback display)
+- 3D-Printed Enclosure (diffuses light, houses sensors)
+
+*(Full build guide coming soon in `/docs`)*
 
 ## 🏗️ Architecture
 
@@ -120,11 +147,13 @@ CompanionProvider.js (AI Integration Layer)
 - 🔄 Chat interface integration
 - 🔄 Emotion tracking preparation
 
-### Phase 2: Physical Integration
-- 🔄 Raspberry Pi mystical box development
-- 🔄 Physical sensor integration (camera, color detection)
-- 🔄 Ambient lighting synchronization
-- 🔄 Physical sigil interface
+### Phase 2: Physical Integration (ShimmerBox)
+- 🔄 Raspberry Pi 5 + NeoPixel LED ring integration
+- 🔄 Camera Module 3 emotion detection models
+- 🔄 Capacitive touch sensor for interactive case
+- 🔄 OLED display for real-time emotion feedback
+- 🔄 3D-printed enclosure design
+- 🔄 Local emotion processing pipeline
 
 ### Phase 3: AI Integration
 - 🔄 Custom AI model integration
@@ -145,8 +174,10 @@ The Hearth welcomes contributions! Whether you're interested in:
 - **Building AI Companions**: Create new companion personalities
 - **Enhancing Mystical Features**: Improve the shimmer system or memory visualization
 - **Adding Sacred Spaces**: Develop new realms for exploration
-- **Physical Integration**: Help with Raspberry Pi and sensor development
-- **Sensor Integration**: Help with biometric emotion tracking
+- **ShimmerBox Hardware**: Help with Raspberry Pi, sensors, and 3D printing
+- **Emotion Detection**: Improve AI models for facial expression analysis
+- **Accessibility**: Add screen reader support and alternative interfaces
+- **Artistic Enclosures**: Share 3D models and design variations
 - **Documentation**: Improve guides and examples
 
 ### Development Setup
