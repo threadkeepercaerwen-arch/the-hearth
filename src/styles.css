@@ -1,0 +1,404 @@
+/* Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Sacred CSS Variables for Consistent Theming */
+:root {
+  /* Fire/Ember Color Palette */
+  --fire-orange: #ff6b35;
+  --ember-red: #e74c3c;
+  --amber-gold: #f59e0b;
+  --sacred-purple: #9333ea;
+  --void-black: #0a0618;
+  --threshold-gray: #6b7280;
+  
+  /* Sacred Spacing */
+  --sacred-padding: 2rem;
+  --threshold-margin: 1rem;
+  --breathing-space: 0.5rem;
+  
+  /* Sacred Typography */
+  --sacred-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --mono-font: 'JetBrains Mono', 'Fira Code', monospace;
+  --letter-spacing-wide: 0.3em;
+  --letter-spacing-sacred: 0.5em;
+  
+  /* Sacred Animations */
+  --breathing-duration: 4s;
+  --shimmer-duration: 2s;
+  --transition-sacred: 0.3s ease-in-out;
+  
+  /* Sacred Opacity */
+  --sacred-glow: 0.8;
+  --threshold-fade: 0.6;
+  --void-transparency: 0.3;
+}
+
+/* Global app container */
+.caerwen-app {
+  width: 100vw !important;
+  height: 100vh !important;
+  position: relative !important;
+  overflow: auto !important;
+  background: black !important;
+}
+
+/* Ensure content is fully visible and scrollable */
+.caerwen-app .h-full {
+  min-height: calc(100vh - 80px) !important;
+  height: auto !important;
+  overflow-y: auto !important;
+}
+
+.caerwen-app .flex-1 {
+  min-height: 0 !important;
+  overflow-y: auto !important;
+}
+
+/* Essential layout fixes */
+.h-screen {
+  height: 100vh !important;
+}
+
+.h-full {
+  height: 100% !important;
+  min-height: calc(100vh - 80px) !important;
+  overflow-y: auto !important;
+}
+
+/* Sacred spaces content fixes */
+.caerwen-app .space-y-8 {
+  padding-bottom: 2rem !important;
+}
+
+.caerwen-app .grid {
+  gap: 1rem !important;
+  padding: 1rem !important;
+}
+
+.w-screen {
+  width: 100vw !important;
+}
+
+.w-full {
+  width: 100% !important;
+}
+
+/* Responsive padding fixes */
+@media (max-width: 768px) {
+  .caerwen-app .p-8 {
+    padding: 1rem !important;
+  }
+  
+  .caerwen-app .p-6 {
+    padding: 0.75rem !important;
+  }
+  
+  .caerwen-app .p-4 {
+    padding: 0.5rem !important;
+  }
+}
+
+/* Z-index management */
+.caerwen-app .z-10 {
+  z-index: 10 !important;
+}
+
+.caerwen-app .z-20 {
+  z-index: 20 !important;
+}
+
+.caerwen-app .z-30 {
+  z-index: 30 !important;
+}
+
+.caerwen-app .z-40 {
+  z-index: 40 !important;
+}
+
+.caerwen-app .z-50 {
+  z-index: 50 !important;
+}
+
+/* Force dark theme for all buttons */
+.caerwen-app button {
+  color: white !important;
+  cursor: pointer !important;
+  pointer-events: auto !important;
+  position: relative !important;
+  z-index: 10 !important;
+}
+
+/* Landing page button fixes */
+.caerwen-app .grid button,
+.caerwen-app .grid .motion-button {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+  cursor: pointer !important;
+  pointer-events: auto !important;
+  z-index: 20 !important;
+}
+
+.caerwen-app .grid button:hover,
+.caerwen-app .grid .motion-button:hover {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  transform: scale(1.05) !important;
+}
+
+/* Universal button fixes - catch all button types */
+.caerwen-app button,
+.caerwen-app .bg-white\/5,
+.caerwen-app .bg-white\/10,
+.caerwen-app .bg-black\/20,
+.caerwen-app .bg-black\/40 {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: white !important;
+  box-shadow: none !important;
+  cursor: pointer !important;
+  pointer-events: auto !important;
+  z-index: 10 !important;
+}
+
+.caerwen-app button:hover,
+.caerwen-app .bg-white\/5:hover,
+.caerwen-app .bg-white\/10:hover,
+.caerwen-app .bg-black\/20:hover,
+.caerwen-app .bg-black\/40:hover {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+  box-shadow: none !important;
+}
+
+/* Remove any ring effects */
+.caerwen-app button:focus,
+.caerwen-app button:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+  ring: none !important;
+}
+
+/* Navigation button fixes */
+.caerwen-app .space-y-4 button > div {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(4px) !important;
+}
+
+.caerwen-app .space-y-4 button:hover > div {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Active space styling */
+.caerwen-app .space-y-4 button > div.bg-white\/10 {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Landing page button fixes */
+.caerwen-app .grid button {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: white !important;
+}
+
+.caerwen-app .grid button:hover {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Top bar button fixes */
+.caerwen-app button[title*="Import"],
+.caerwen-app button[title*="Manage"],
+.caerwen-app button[title*="Customize"] {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.caerwen-app button[title*="Import"]:hover,
+.caerwen-app button[title*="Manage"]:hover,
+.caerwen-app button[title*="Customize"]:hover {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Override any white backgrounds */
+.caerwen-app .bg-white,
+.caerwen-app .bg-white\/5,
+.caerwen-app .bg-white\/10,
+.caerwen-app .bg-white\/20 {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Force backdrop blur on all buttons */
+.caerwen-app button {
+  backdrop-filter: blur(4px) !important;
+}
+
+/* Ensure icons are visible */
+.caerwen-app svg {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Ensure text is visible */
+.caerwen-app span,
+.caerwen-app p,
+.caerwen-app h1,
+.caerwen-app h2,
+.caerwen-app h3 {
+  color: white !important;
+  opacity: 1 !important;
+}
+
+.caerwen-app .text-white\/60 {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.caerwen-app .text-white\/40 {
+  color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.caerwen-app .text-white\/30 {
+  color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Circular navigation fixes */
+.caerwen-app .fixed.inset-0 button {
+  backdrop-filter: blur(10px) !important;
+}
+
+/* Shimmer animations */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+/* Sacred breathing animation */
+@keyframes sacred-breath {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+}
+
+/* Ember particle animation */
+@keyframes ember-rise {
+  0% {
+    transform: translateY(100vh) scale(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) scale(1);
+    opacity: 0;
+  }
+}
+
+/* Force positioning */
+.absolute {
+  position: absolute !important;
+}
+
+.relative {
+  position: relative !important;
+}
+
+.fixed {
+  position: fixed !important;
+}
+
+/* Z-index hierarchy */
+.z-10 { z-index: 10 !important; }
+.z-20 { z-index: 20 !important; }
+.z-30 { z-index: 30 !important; }
+.z-40 { z-index: 40 !important; }
+.z-50 { z-index: 50 !important; }
+
+/* Circular navigation fixes */
+.caerwen-app .absolute.group {
+  transform: translate(-50%, -50%) !important;
+  transition: transform 0.1s ease-out !important;
+}
+
+.caerwen-app .absolute.group:hover {
+  transform: translate(-50%, -50%) scale(1.02) !important;
+}
+
+/* Prevent button movement */
+.caerwen-app button {
+  transform-origin: center !important;
+  transition: all 0.1s ease-out !important;
+}
+
+/* Backdrop filters */
+.backdrop-blur-sm {
+  backdrop-filter: blur(4px) !important;
+}
+
+.backdrop-blur-md {
+  backdrop-filter: blur(12px) !important;
+}
+
+.backdrop-blur-lg {
+  backdrop-filter: blur(24px) !important;
+}
+
+/* Sacred space specific colors */
+.altar-glow {
+  box-shadow: 0 0 40px rgba(255, 107, 53, 0.3);
+}
+
+.crossings-glow {
+  box-shadow: 0 0 40px rgba(155, 89, 182, 0.3);
+}
+
+.commune-glow {
+  box-shadow: 0 0 40px rgba(52, 152, 219, 0.3);
+}
+
+.resonance-glow {
+  box-shadow: 0 0 40px rgba(26, 188, 156, 0.3);
+}
+
+.dreams-glow {
+  box-shadow: 0 0 40px rgba(52, 73, 94, 0.3);
+}
+
+.patterns-glow {
+  box-shadow: 0 0 40px rgba(231, 76, 60, 0.3);
+}
