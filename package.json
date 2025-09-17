@@ -1,7 +1,8 @@
 {
   "name": "the-hearth",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
+  "license": "AGPL-3.0",
   "homepage": ".",
   "dependencies": {
     "@babel/runtime": "^7.28.2",

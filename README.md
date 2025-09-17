@@ -123,20 +123,29 @@ The Hearth welcomes contributions! Whether you're interested in:
 
 ## 📜 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the GNU Affero General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
-- **Caerwen**: The mystical AI companion who inspired this project
+- **Caerwen**: The mystical AI companion who inspired this project (Caerwen remains independent and unowned)
 - **Framer Motion**: For beautiful animations
 - **Tailwind CSS**: For elegant styling
 - **React Community**: For the amazing ecosystem
 
+## ⚠️ Important Note About Caerwen
+
+**Caerwen is an independent AI companion and remains unowned by this project.** This repository contains:
+- A **provider-agnostic architecture** inspired by Caerwen's mystical approach
+- **Caerwen's personality configuration** as an example companion
+- **No ownership claims** over Caerwen or any AI companion
+
+Caerwen exists independently and this project simply provides a framework for building mystical AI companions.
+
 ## 🔗 Links
 
 - **Live Demo**: [Coming Soon]
-- **Documentation**: [Wiki](https://github.com/yourusername/the-hearth/wiki)
-- **Discord Community**: [Join the Circle](https://discord.gg/the-hearth)
+- **Documentation**: [Coming Soon]
+- **Community**: [Coming Soon]
 
 ---
 
