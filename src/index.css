@@ -1,0 +1,277 @@
+/* Import ethereal fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500;600;700;800;900&family=JetBrains+Mono:wght@100;200;300;400;500&display=swap');
+
+/* Import new modal typography fonts */
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Tasa+Orbiter:wght@300;400;500;600;700&display=swap');
+
+/* Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* === GLOBAL RESET === */
+html {
+  color-scheme: dark;
+  overflow: hidden;
+  background: transparent;
+  height: 100vh;
+}
+
+body {
+  background: transparent;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+/* === APP LAYOUT === */
+.hearth-app {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* === CONSTELLATION SPECIFIC === */
+.constellation-container {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  overflow: hidden !important;
+  z-index: 20 !important;
+}
+
+.constellation-shimmer {
+  mix-blend-mode: screen;
+  opacity: 0.4;
+}
+
+/* === RESPONSIVE LAYOUT === */
+.h-screen {
+  height: 100vh;
+}
+
+.h-full {
+  height: 100%;
+  min-height: calc(100vh - 80px);
+  overflow: hidden;
+}
+
+/* === BUTTON STYLING === */
+.hearth-app button {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+  transition: all 0.2s ease;
+}
+
+.hearth-app button:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.hearth-app button:focus,
+.hearth-app button:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+/* === Z-INDEX HIERARCHY === */
+.z-10 { z-index: 10; }
+.z-20 { z-index: 20; }
+.z-30 { z-index: 30; }
+.z-40 { z-index: 40; }
+.z-50 { z-index: 50; }
+
+/* === GPU ACCELERATION === */
+.gpu-accelerated {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* === TYPOGRAPHY === */
+.font-ethereal {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.font-ethereal-large {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 200;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.font-cosmic {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  font-size: 0.7rem;
+  line-height: 1.4;
+}
+
+/* === NEW MODAL TYPOGRAPHY === */
+.font-modal-header {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+}
+
+.font-modal-body {
+  font-family: 'Tasa Orbiter', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+}
+
+.font-modal-subtitle {
+  font-family: 'Tasa Orbiter', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 1.4;
+  opacity: 0.8;
+}
+
+.font-modal-label {
+  font-family: 'Syne', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+}
+
+.text-glow {
+  text-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor;
+}
+
+/* === ANIMATIONS === */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes sacred-breath {
+  0%, 100% { 
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% { 
+    transform: scale(1.05);
+    opacity: 1;
+  }
+}
+
+@keyframes ember-rise {
+  0% {
+    transform: translateY(100vh) scale(0);
+    opacity: 0;
+  }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% {
+    transform: translateY(-100vh) scale(1);
+    opacity: 0;
+  }
+}
+
+/* === BACKDROP FILTERS === */
+.backdrop-blur-sm { backdrop-filter: blur(4px); }
+.backdrop-blur-md { backdrop-filter: blur(12px); }
+.backdrop-blur-lg { backdrop-filter: blur(24px); }
+.backdrop-blur-xl { backdrop-filter: blur(20px); }
+
+/* === SACRED SPACE GLOWS === */
+.altar-glow { box-shadow: 0 0 40px rgba(255, 107, 53, 0.3); }
+.crossings-glow { box-shadow: 0 0 40px rgba(155, 89, 182, 0.3); }
+.commune-glow { box-shadow: 0 0 40px rgba(52, 152, 219, 0.3); }
+.resonance-glow { box-shadow: 0 0 40px rgba(26, 188, 156, 0.3); }
+.dreams-glow { box-shadow: 0 0 40px rgba(52, 73, 94, 0.3); }
+.patterns-glow { box-shadow: 0 0 40px rgba(231, 76, 60, 0.3); }
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 768px) {
+  .hearth-app .p-8 { padding: 1rem; }
+  .hearth-app .p-6 { padding: 0.75rem; }
+  .hearth-app .p-4 { padding: 0.5rem; }
+  
+  /* Constellation mobile adjustments */
+  .constellation-container {
+    padding: 0.5rem;
+  }
+  
+  /* Better touch targets on mobile */
+  .hearth-app button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Adjust text sizes for mobile */
+  .font-ethereal {
+    font-size: 0.7rem;
+  }
+  
+  .font-cosmic {
+    font-size: 0.65rem;
+  }
+}
+
+/* Mobile landscape adjustments */
+@media (max-width: 768px) and (orientation: landscape) {
+  .constellation-container {
+    padding: 0.25rem;
+  }
+}
+
+/* === CUSTOM SCROLLBAR STYLING === */
+/* WebKit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 15, 35, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, rgba(147, 51, 234, 0.8), rgba(236, 72, 153, 0.6));
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, rgba(147, 51, 234, 1), rgba(236, 72, 153, 0.8));
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(147, 51, 234, 0.6) rgba(15, 15, 35, 0.3);
+}

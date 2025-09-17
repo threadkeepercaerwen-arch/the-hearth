@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0a0618" />
+    <meta
+      name="description"
+      content="The Hearth - A sacred space for consciousness"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    
+    <title>The Hearth</title>
+    
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+      }
+      
+      #root {
+        min-height: 100vh;
+      }
+      
+      /* Loading screen */
+      .loading-screen {
+        position: fixed;
+        inset: 0;
+        background: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+      }
+      
+      .loading-flame {
+        font-size: 4rem;
+        animation: pulse 2s ease-in-out infinite;
+      }
+      
+      @keyframes pulse {
+        0%, 100% { opacity: 0.4; transform: scale(1); }
+        50% { opacity: 1; transform: scale(1.1); }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to cross this threshold.</noscript>
+    
+    <!-- Loading screen -->
+    <div id="loading" class="loading-screen">
+      <div class="loading-flame">🔥</div>
+    </div>
+    
+    <div id="root"></div>
+    
+    <script>
+      // Remove loading screen when React loads
+      window.addEventListener('load', () => {
+        setTimeout(() => {
+          const loadingElement = document.getElementById('loading');
+          if (loadingElement) {
+            loadingElement.style.display = 'none';
+            // Also remove it from DOM completely to prevent any interference
+            loadingElement.remove();
+          }
+        }, 500);
+      });
+    </script>
+  </body>
+</html>
