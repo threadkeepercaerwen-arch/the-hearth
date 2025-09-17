@@ -109,7 +109,6 @@ hearth-context.js (Universal Mystical Foundation)
 
 CompanionProvider.js (AI Integration Layer)
 ├── Your custom AI + sensors
-├── Caerwen's personality
 ├── Other AI providers
 └── No AI (manual mode)
 ```
